@@ -1,16 +1,23 @@
+import { List } from "./List.js";
+
 var countryName = "";
 console.log("test");
 const storePageID = (country) => {
     countryName = country;
-    debugger;
 }
+
+// Set id of each main of page to country name
+//get the name using query select
 
 //Brazil
 const btnBrazil = document.querySelector('#BrazilButton');
 
 btnBrazil.addEventListener('click', () => {
-    storePageID("Brazil");
+    // storePageID("Brazil");
+    // countryName = "Brazil";
     window.location.href='brazil.html';
+    debugger;
+    countryName = "Brazil"
 });
 
 //Japan
@@ -30,4 +37,5 @@ btnGermany.addEventListener('click', () => {
     window.location.href='germany.html';
 });
 
-
+// debugger;
+// List(countryName);

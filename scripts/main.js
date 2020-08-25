@@ -19,7 +19,6 @@ btnBrazil.addEventListener('click', () => {
 const btnJapan = document.querySelector('#JapanButton');
 
 btnJapan.addEventListener('click', () => {
-    storePageID("Japan");
     window.location.href='japan.html';
 });
 
@@ -28,7 +27,6 @@ btnJapan.addEventListener('click', () => {
 const btnGermany = document.querySelector('#GermanyButton');
 
 btnGermany.addEventListener('click', () => {
-    storePageID("Germany");
     window.location.href='germany.html';
 });
 

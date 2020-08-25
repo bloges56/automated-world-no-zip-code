@@ -6,17 +6,15 @@ import { Country } from "./Country.js"
 
 export const List = (countryName) => {
     const contentElement = document.querySelector(".country-details");
-    debugger;
-    if(countryName === "Brazil"){
+    if(countryName === "brazil"){
         var country = useBrazilData();
-        debugger;
     }
-    // else if(countryName === "Japan"){
-    //     countryData = useJapanData();
-    // }
-    // else {
-    //     countryData = useGermanyData();
-    // }
+    else if(countryName === "japan"){
+        countryData = useJapanData();
+    }
+    else {
+        countryData = useGermanyData();
+    }
 
     console.log(country);
     contentElement.innerHTML = Country(country);

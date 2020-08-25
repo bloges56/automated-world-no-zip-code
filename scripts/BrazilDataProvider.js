@@ -7,7 +7,3 @@ const countryData = [
 export const useCountryData = () => {
     return countryData.slice();
 }
-
-const useCountryCities = () => {
-    return countryData.cities.slice();
-}

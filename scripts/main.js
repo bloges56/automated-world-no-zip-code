@@ -1,10 +1,8 @@
 import { List } from "./List.js";
 
-var countryName = "";
-console.log("test");
-const storePageID = (country) => {
-    countryName = country;
-}
+// Grabs main element and stores its id in countryName
+var countryName = document.getElementsByTagName("main")[0].id;
+
 
 // Set id of each main of page to country name
 //get the name using query select
@@ -13,11 +11,8 @@ const storePageID = (country) => {
 const btnBrazil = document.querySelector('#BrazilButton');
 
 btnBrazil.addEventListener('click', () => {
-    // storePageID("Brazil");
-    // countryName = "Brazil";
     window.location.href='brazil.html';
-    debugger;
-    countryName = "Brazil"
+    
 });
 
 //Japan
@@ -37,5 +32,7 @@ btnGermany.addEventListener('click', () => {
     window.location.href='germany.html';
 });
 
-// debugger;
-// List(countryName);
+
+ if(countryName !== ""){
+    List(countryName);
+ }

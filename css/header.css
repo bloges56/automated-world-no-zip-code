@@ -1,4 +1,13 @@
 /* Nav Bar CSS */
+:root{
+  --white-light: 100%;
+  --gray-light: 79%;
+  --main-light : var(--white-light);
+}
+
+:root[theme='gray']{
+  --main-light : var(--gray-light);
+}
 
 .logo {
     display: flex;

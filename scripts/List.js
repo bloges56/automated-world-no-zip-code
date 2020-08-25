@@ -1,4 +1,6 @@
 import { useCountryData as useBrazilData } from "./BrazilDataProvider.js";
+import { useCountryData as useGermanyData } from "./GermanyDataProvider.js";
+import { useCountryData as useJapanData } from "./JapanDataProvider.js";
 import { Country } from "./Country.js"
 
 
@@ -10,13 +12,12 @@ export const List = (countryName) => {
         var country = useBrazilData();
     }
     else if(countryName === "japan"){
-        countryData = useJapanData();
+        var country = useJapanData();
     }
     else {
-        countryData = useGermanyData();
+        var country = useGermanyData();
     }
 
-    console.log(country);
     contentElement.innerHTML = Country(country);
 
 }
